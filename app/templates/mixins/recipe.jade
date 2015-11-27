@@ -1,0 +1,15 @@
+mixin recipe(header, img, desc, star1, star2, star3, star4, star5)
+  article
+    h4 #{header}
+    span(class="#{img}")
+      .like
+        i(class="fa fa-plus")
+        i(class="fa fa-heart")
+    p(class="smaller") #{desc}
+    hr
+    span
+      i(class="fa fa-star #{star1}")
+      i(class="fa fa-star #{star2}")
+      i(class="fa fa-star #{star3}")
+      i(class="fa fa-star #{star4}")
+      i(class="fa fa-star #{star5}")

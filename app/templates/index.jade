@@ -1,0 +1,20 @@
+extends components/boilerplate.jade
+
+block title
+  title I Love Pie
+
+block css
+  link(rel="stylesheet" href="css/styles.css")
+
+block content
+  input(type="checkbox" id="nav-trigger")
+  #wrapper
+    include components/header.jade
+    include components/nav.jade
+    include pages/index.inc.jade
+    include components/footer.jade
+  .fader
+      
+block js
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+  script(src="js/all.min.js")

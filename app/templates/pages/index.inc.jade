@@ -1,0 +1,20 @@
+include ../mixins/recipe.jade
+      
+#content-container
+  #offer-box
+    section
+      p SO, YOU LOVE PIE?
+      p(class="small").
+        We have over 500 recipes, access to all and share your own pies for free!
+      a(href="#" class="btn") <i class="fa fa-arrow-right"></i> GET FREE PIE NOW!</a>
+  #recent-recipes-box
+    section#recipe
+      +recipe("Blackberrypie", "img-pie-3", "Lorem ipsum dolor sit amet, consectetur adipisicing elit...", "active-star", "active-star", "active-star", "active-star")
+    section#recipe
+      +recipe("Raspberrypie", "img-pie-2", "Lorem ipsum dolor sit amet, consectetur adipisicing elit...", "active-star", "active-star")
+    section#recipe
+      +recipe("Blueberrypie", "img-pie-1", "Lorem ipsum dolor sit amet, consectetur adipisicing elit...", "active-star", "active-star", "active-star")
+    section#recipe
+      +recipe("Lemonpie", "img-pie-5", "Lorem ipsum dolor sit amet, consectetur adipisicing elit...", "active-star", "active-star", "active-star")
+    section#recipe
+      +recipe("Cherrypie", "img-pie-4", "Lorem ipsum dolor sit amet, consectetur adipisicing elit...", "active-star", "active-star", "active-star")

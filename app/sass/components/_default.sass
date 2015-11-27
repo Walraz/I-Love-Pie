@@ -1,0 +1,61 @@
+#wrapper
+  min-height: 100vh
+  transition: min-height 1s ease
+  display: flex
+  flex-flow: column
+
+.logo
+  color: white
+  font:
+    size: 1.5rem
+  line-height: 1.5rem
+  display: block
+  text-transform: uppercase
+
+  .fa-heart-o
+    font-size: 1.4rem
+
+.fa-bars, .fa-times
+  color: white
+  cursor: pointer
+
+form
+  display: flex
+  flex-flow: row
+  justify-content: space-between
+
+  input
+    border-left: 5px solid $global-color
+    border-top: 0
+    border-right: 0
+    border-bottom: 0
+    width: 100%
+    margin: 0
+    padding: 0.6rem
+    font-size: 0.6rem
+
+  input:focus
+    outline: none
+
+#offer-box
+  display: flex
+  flex-flow: column
+  justify-content: flex-end
+  align-items: center
+  background:
+    image: url(../img/bg.jpg)
+    size: cover
+    position: right
+
+  section
+    padding: 1rem
+    transition: height 1s ease
+    height: 50vh
+    display: flex
+    flex-flow: column
+    justify-content: center
+    align-items: center
+
+    p
+      text-align: center
+      text-shadow: 0 0 15px black

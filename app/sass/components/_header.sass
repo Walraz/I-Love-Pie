@@ -1,0 +1,61 @@
+header
+  padding: 1rem
+  background: #212730
+  @extend %flex-center
+  justify-content: space-between
+
+  .hamburger
+    width: 20px
+    height: 18px
+    position: relative
+    cursor: pointer
+    display: block
+
+    .line
+      display: block
+      width: 100%
+      height: 3px
+      border-radius: 2px
+      background: white
+      position: absolute
+      transition: all 200ms
+
+      &:nth-child(1)
+        top: 0
+
+      &:nth-child(2)
+        top: 50%
+        transform: translateY(-50%)
+
+      &:nth-child(3)
+        bottom: 0
+
+    &.close
+
+      .line
+        background: $global-color
+
+        &:nth-child(1),
+        &:nth-child(2)
+          top: 0
+          transform: translateY(8px) rotate(45deg)
+
+        &:nth-child(3)
+          transform: translateY(-8px) rotate(-45deg)
+
+.nav-trigger
+  cursor: pointer
+  padding: 0.75em
+  background: none
+  transition: all .4s ease
+  position: fixed
+  margin: 0.5em
+  top: 0
+  right: 0
+  z-index: 3
+
+.bg-color
+  background: $global-color
+
+.none-color
+  background: none

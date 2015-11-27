@@ -1,0 +1,30 @@
+#menu-bar
+  #search-container
+    form
+      input(type="text" placeholder="Search for pies!")
+      a(href="#" class="btn-submit")
+        i(class="fa fa-search")
+  nav
+    ul
+      li
+        a(href="#") HOME
+      li
+        a(href="#") RECIPES
+      li  
+        label(for="sub-trigger")
+          | MY PAGE
+          | <i class="fa fa-sort-down"></i>
+        input(type="checkbox" id="sub-trigger")
+        ul#sub-menu
+          li
+            a(href="#") 
+              i(class="fa fa-plus")
+              |  CREATE A PIE
+          li
+            a(href="#")
+              i(class="fa fa-bookmark-o")
+              |  BOOKMARKED PIES
+      li
+        a(href="#") ABOUT US
+      li
+        a(href="#") CONTACT

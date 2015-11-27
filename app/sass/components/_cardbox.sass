@@ -1,0 +1,87 @@
+#recent-recipes-box
+  display: flex
+  flex-flow: row wrap
+
+  section
+    background: #f9f9f9
+    margin: 1rem
+    padding: 1rem
+    border-bottom: 2px solid lightgrey
+    border-right: 2px solid lightgrey
+    display: flex
+    flex: 1 42%
+
+    article
+      flex: 1
+      display: flex
+      align-items: stretch
+      flex-flow: column
+
+      hr
+        width: 100%
+        background: lightgrey
+        height: 1px
+        border: 0
+
+      p
+        color: slategrey
+
+      h4
+        padding-bottom: 0.5rem
+        font-size: 1rem
+        color: darkslategrey
+
+.img-pie-1, .img-pie-2, .img-pie-3, .img-pie-4, .img-pie-5
+  width: 100%
+  height: 50vh
+  max-height: 150px
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+
+.img-pie-1
+  background:
+    image: url('../img/pie_1.jpeg')
+    size: cover
+    position: center
+
+.img-pie-2
+  background:
+    image: url('../img/pie_2.jpeg')
+    size: cover
+    position: center
+
+.img-pie-3
+  background:
+    image: url('../img/pie_3.jpg')
+    size: cover
+    position: center
+
+.img-pie-4
+  background:
+    image: url('../img/pie_4.jpg')
+    size: cover
+    position: center
+
+.img-pie-5
+  background:
+    image: url('../img/pie_5.jpg')
+    size: cover
+    position: center
+
+.fa-star
+  color: #555
+
+.active-star
+  color: $global-color
+
+.fa-heart, .fa-plus
+  background: $global-color
+  color: white
+  padding: 0.8rem
+  font-size: 0.8rem
+  cursor: pointer
+
+  &:hover
+    background: lighten($global-color, 20%)
+    color: #f1f1f1

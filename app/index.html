@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I Love Pie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <input type="checkbox" id="nav-trigger">
+    <div id="wrapper">
+      <header><span class="logo">I<i class="fa fa-heart-o active-star"></i>Pie</span>
+        <label for="nav-trigger" class="nav-trigger">
+          <div class="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span></div>
+        </label>
+      </header>
+      <div id="menu-bar">
+        <div id="search-container">
+          <form>
+            <input type="text" placeholder="Search for pies!"><a href="#" class="btn-submit"><i class="fa fa-search"></i></a>
+          </form>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">RECIPES</a></li>
+            <li> 
+              <label for="sub-trigger">
+                MY PAGE
+                <i class="fa fa-sort-down"></i>
+              </label>
+              <input type="checkbox" id="sub-trigger">
+              <ul id="sub-menu">
+                <li><a href="#"> <i class="fa fa-plus"></i> CREATE A PIE</a></li>
+                <li><a href="#"><i class="fa fa-bookmark-o"></i> BOOKMARKED PIES</a></li>
+              </ul>
+            </li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="content-container">
+        <div id="offer-box">
+          <section>
+            <p>SO, YOU LOVE PIE?</p>
+            <p class="small">We have over 500 recipes, access to all and share your own pies for free!</p><a href="#" class="btn"><i class="fa fa-arrow-right"></i> GET FREE PIE NOW!</a></a>
+          </section>
+        </div>
+        <div id="recent-recipes-box">
+          <section id="recipe">
+                  <article>
+                    <h4>Blackberrypie</h4><span class="img-pie-3">
+                      <div class="like"><i class="fa fa-plus"></i><i class="fa fa-heart"></i></div></span>
+                    <p class="smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <hr><span><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star undefined"></i></span>
+                  </article>
+          </section>
+          <section id="recipe">
+                  <article>
+                    <h4>Raspberrypie</h4><span class="img-pie-2">
+                      <div class="like"><i class="fa fa-plus"></i><i class="fa fa-heart"></i></div></span>
+                    <p class="smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <hr><span><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star undefined"></i><i class="fa fa-star undefined"></i><i class="fa fa-star undefined"></i></span>
+                  </article>
+          </section>
+          <section id="recipe">
+                  <article>
+                    <h4>Blueberrypie</h4><span class="img-pie-1">
+                      <div class="like"><i class="fa fa-plus"></i><i class="fa fa-heart"></i></div></span>
+                    <p class="smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <hr><span><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star undefined"></i><i class="fa fa-star undefined"></i></span>
+                  </article>
+          </section>
+          <section id="recipe">
+                  <article>
+                    <h4>Lemonpie</h4><span class="img-pie-5">
+                      <div class="like"><i class="fa fa-plus"></i><i class="fa fa-heart"></i></div></span>
+                    <p class="smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <hr><span><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star undefined"></i><i class="fa fa-star undefined"></i></span>
+                  </article>
+          </section>
+          <section id="recipe">
+                  <article>
+                    <h4>Cherrypie</h4><span class="img-pie-4">
+                      <div class="like"><i class="fa fa-plus"></i><i class="fa fa-heart"></i></div></span>
+                    <p class="smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <hr><span><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star active-star"></i><i class="fa fa-star undefined"></i><i class="fa fa-star undefined"></i></span>
+                  </article>
+          </section>
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+    <div class="fader"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+@media all and (min-width: 420px)
+  #offer-box .btn
+    width: 400px
+    margin: 1rem
+
+@media all and (min-width:530px)
+  #recent-recipes-box section
+    flex: 1 40%
+
+@media all and (min-width: 740px)
+  .fader
+    display: none!important
+
+  .lock
+    overflow: auto
+
+  #recent-recipes-box section
+    flex: 1 25%
+
+    &:nth-child(4)
+      order: -1
+
+  header label
+    display: none
+
+  nav
+    display: block
+    order: -1
+    flex: 3
+    position: relative
+    left: 0
+    right: 0
+    bottom: auto
+    width: 100%
+    height: auto
+    overflow-y: visible
+
+    ul
+      display: flex
+      flex-flow: row
+      justify-content: space-around
+
+  #sub-menu
+    position: absolute
+    background: rgba(255, 255, 255, 0.92)
+    flex-flow: row
+    justify-content: center
+    left: 0
+    right: 0
+    width: 100vw
+
+  #menu-bar
+    display: flex
+    justify-content: space-between
