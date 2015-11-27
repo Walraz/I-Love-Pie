@@ -2,3 +2,37 @@ footer
   flex: 1
   padding: 1em 1em 0em 1em
   @include linearGradient(#212730, black)
+
+  p
+    margin-top: 2em
+    padding: 0
+    display: flex
+    color: mediumspringgreen
+    font-size: 0.4em
+    justify-content: flex-start
+    align-items: flex-end
+
+.footer-content
+  @extend %flex-center
+  justify-content: space-between
+
+  .site-map
+    @extend %flex-center
+    flex-flow: row wrap
+    font-size: 0.6em
+
+    .fa
+      padding-right: 1em
+      padding-left: 1em
+      color: #666
+      font-size: 4px
+
+  a
+    color: #666
+
+    &:hover
+      color: #f1f1f1
+
+.social-icon .fa
+    font-size: 1em
+    padding-left: 1em
